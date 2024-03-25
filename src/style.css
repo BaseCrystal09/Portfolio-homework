@@ -1,0 +1,20 @@
+:root {
+  --primary-background-color: linear-gradient(
+    135deg,
+    rgb(246, 206, 236) 10%,
+    rgb(217, 57, 205) 100%
+  );
+  --tittle-text: "Exo", sans-serif;
+  --subtittle-text: "Meera Inimai", sans-serif;
+  --primary-text-font: "Duru Sans", sans-serif;
+}
+
+* {
+  background: var(--primary-background-color);
+}
+h1 {
+  background: white;
+  text-align: center;
+  font-family: var(--tittle-text);
+  font-weight:bolder !important;
+}
