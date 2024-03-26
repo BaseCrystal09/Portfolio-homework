@@ -1,20 +1,49 @@
 :root {
-  --primary-background-color: linear-gradient(
-    135deg,
-    rgb(246, 206, 236) 10%,
-    rgb(217, 57, 205) 100%
+  --primary-background-color: radial-gradient(
+    circle at 11.4% 50%,
+    rgb(255, 37, 174) 0%,
+    rgb(249, 233, 8) 90%
   );
-  --tittle-text: "Exo", sans-serif;
-  --subtittle-text: "Meera Inimai", sans-serif;
-  --primary-text-font: "Duru Sans", sans-serif;
 }
-
-* {
-  background: var(--primary-background-color);
+.hero {
+  margin-top: 70px !important;
 }
-h1 {
-  background: white;
-  text-align: center;
+.hero p {
+  font-family: var(--primary-text-font);
+  font-size: 20px;
+}
+.hero h1 {
   font-family: var(--tittle-text);
-  font-weight:bolder !important;
+  font-weight: 700;
+  font-size: 86px;
+  color: #fd4799;
+}
+.hero h3 {
+  font-family: var(--subtittle-text);
+}
+button {
+  background: var(--primary-background-color);
+  color: white;
+  font-family: var(--primary-text-font) !important;
+  padding: 8px;
+  border: solid var(--primary-background-color);
+  border-radius: 10px !important;
+}
+@media (max-width: 768px) {
+  .hero {
+    margin-top: inherit !important;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .hero h3 {
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 1440px) {
+  img {
+    max-width: 80% !important;
+  }
 }
