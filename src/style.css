@@ -14,6 +14,16 @@
 body {
   background-color: rgb(248, 227, 248) !important;
 }
+.navbar {
+  top: 0;
+  background-color: rgb(248, 227, 248);
+  padding: 0 !important;
+  line-height: 40px;
+}
+.navbar-brand {
+  color: #fd4799 !important;
+  font-family: var(--tittle-text);
+}
 .hero {
   margin: 90px 0px !important;
 }
@@ -30,8 +40,25 @@ body {
 .hero h3 {
   font-family: var(--subtittle-text);
 }
-.hero-header button{
+.hero-header button {
   margin: 20px 0 !important;
+}
+.navbar-toggler-icon {
+  background-color: transparent;
+}
+.navbar-toggler {
+  transition: all 200ms ease-in-out;
+}
+.navbar-toggler:focus {
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler:hover {
+  background: #fd4799 !important;
+}
+.nav-link{
+  font-family: var(--primary-text-font);
 }
 button {
   background: var(--primary-background-color);
@@ -72,13 +99,15 @@ footer p {
   font-family: var(--primary-text-font);
   font-size: 12px;
 }
-footer i{
+footer i {
   background-color: transparent;
 }
 @media (max-width: 768px) {
   .hero {
     margin-top: inherit !important;
     text-align: center;
+    position: relative;
+    top: 50px;
   }
   .hero h1 {
     font-size: 48px;
@@ -94,7 +123,7 @@ footer i{
   img {
     display: none;
   }
-  .project-description{
+  .project-description {
     font-size: 14px !important;
   }
 }
@@ -102,8 +131,8 @@ footer i{
   img {
     max-width: 80% !important;
   }
-  .project-description, .project-title{
+  .project-description,
+  .project-title {
     margin-top: 150px;
-
   }
 }
