@@ -4,9 +4,18 @@
     rgb(255, 37, 174) 0%,
     rgb(249, 233, 8) 90%
   );
+  --tittle-text: "Exo", sans-serif;
+  --subtittle-text: "Meera Inimai", sans-serif;
+  --primary-text-font: "Duru Sans", sans-serif;
+}
+* {
+  background-color: rgb(248, 227, 248);
+}
+body {
+  background-color: rgb(248, 227, 248) !important;
 }
 .hero {
-  margin-top: 70px !important;
+  margin: 90px 0px !important;
 }
 .hero p {
   font-family: var(--primary-text-font);
@@ -21,13 +30,50 @@
 .hero h3 {
   font-family: var(--subtittle-text);
 }
+.hero-header button{
+  margin: 20px 0 !important;
+}
 button {
   background: var(--primary-background-color);
   color: white;
   font-family: var(--primary-text-font) !important;
-  padding: 8px;
+  padding: 10px;
   border: solid var(--primary-background-color);
   border-radius: 10px !important;
+  margin-left: 40px !important;
+}
+h2 {
+  background: var(--primary-background-color) !important;
+  color: white !important;
+  font-family: var(--tittle-text);
+  font-weight: bold !important;
+}
+.project-title {
+  color: #fd4799;
+  font-family: var(--subtittle-text) !important;
+  font-weight: bolder !important;
+  font-size: 36px;
+}
+.project-description {
+  text-align: justify;
+  line-height: 35px;
+  padding: 0 40px !important;
+  font-family: var(--primary-text-font);
+}
+.project {
+  max-width: 80% !important;
+}
+footer p {
+  background: var(--primary-background-color) !important;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-family: var(--primary-text-font);
+  font-size: 12px;
+}
+footer i{
+  background-color: transparent;
 }
 @media (max-width: 768px) {
   .hero {
@@ -41,9 +87,23 @@ button {
   .hero h3 {
     font-size: 18px !important;
   }
+  .project-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  img {
+    display: none;
+  }
+  .project-description{
+    font-size: 14px !important;
+  }
 }
 @media (min-width: 1440px) {
   img {
     max-width: 80% !important;
+  }
+  .project-description, .project-title{
+    margin-top: 150px;
+
   }
 }
