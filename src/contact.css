@@ -8,10 +8,14 @@
   --subtittle-text: "Meera Inimai", sans-serif;
   --primary-text-font: "Duru Sans", sans-serif;
 }
-*, body{
-  background-color: rgb(248, 227, 248);
+*,
+body {
+  background-color: rgb(248, 227, 248) !important;
+  text-align: center;
 }
-
+body{
+    margin:150px 0 !important
+}
 /* Navbar */
 .navbar {
   top: 0;
@@ -75,32 +79,28 @@ button:hover {
   background: var(--primary-background-color);
 }
 /*Main page*/
-.first-container h2 {
-  font-family: var(--tittle-text) !important;
-  font-weight: bold;
-  text-align: center;
-  margin: 90px 20px !important;
-  font-size: 58px;
-  color: #fd4799;
-}
-.project {
-  text-align: center;
-}
-img {
-  max-width: 90%;
-  margin-bottom: 20px;
-}
-.project h3 {
-  font-family: var(--subtittle-text);
+h2 {
+  font-family: var(--tittle-text);
+  font-size: 62px !important;
   font-weight: bolder !important;
-  font-size: 24px !important;
-  color: #fd4799;
+  color: #fd4799 !important;
 }
-.project p {
-  font-family: var(--primary-text-font);
+p {
+  font-family: var(--subtittle-text) !important;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0 !important;
 }
-.picture {
-  max-width: 100% !important;
+.contacts {
+  margin: 100px !important;
+}
+.link{
+    font-size: 24px;
+    text-decoration: none;
+    color: grey;
+}
+.link:hover{
+    color: #fd4799;
 }
 /*footer*/
 footer p {
@@ -113,20 +113,14 @@ footer p {
   font-size: 12px;
 }
 footer a {
-  background-color: transparent;
+  background-color: transparent !important;
   text-decoration: none;
-  color: #ff0090;
+  color: #ff0090 !important;
+  font-size: 12px;
 }
 
 /*responsive*/
 @media (max-width: 748px) {
-  .about-hero h1 {
-    font-size: 48px !important;
-    text-align: center;
-  }
-  h3 {
-    font-size: 18px !important;
-  }
   .nav-link:hover:after {
     width: 20%;
   }
