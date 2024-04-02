@@ -64,20 +64,40 @@ body {
 }
 
 button {
-  background: var(--primary-background-color);
+  background: grey;
   color: white;
   font-family: var(--primary-text-font) !important;
   padding: 10px;
   border: solid var(--primary-background-color);
   border-radius: 10px !important;
-  margin-left: 40px !important;
+  transition: 0.3s;
 }
-h2 {
-  background: var(--primary-background-color) !important;
-  color: white !important;
+button:hover {
+  background: var(--primary-background-color);
+}
+/*Main page*/
+.about-hero h1 {
+  margin: 0;
   font-family: var(--tittle-text);
-  font-weight: bold !important;
+  font-weight: bolder !important;
+  color: #fd4799 !important;
+  font-size: 72px !important;
 }
+.about-hero p {
+  margin-top: 30px;
+  font-family: var(--primary-text-font);
+}
+.about-hero h3 {
+  font-family: var(--subtittle-text);
+  font-weight: bold;
+}
+.text-page{
+  text-align: center;
+}
+img {
+  max-width: 200px;
+}
+/*footer*/
 footer p {
   background: var(--primary-background-color) !important;
   padding: 10px;
@@ -89,41 +109,20 @@ footer p {
 }
 footer a {
   background-color: transparent;
+  text-decoration: none;
+  color: #ff0090;
 }
+
+/*responsive*/
 @media (max-width: 748px) {
-  .hero {
-    margin-top: inherit !important;
-    text-align: center;
-    position: relative;
-    top: 50px;
-  }
-  .hero h1 {
-    font-size: 48px;
+  .about-hero h1 {
+    font-size: 48px !important;
     text-align: center;
   }
-  .hero h3 {
+  h3 {
     font-size: 18px !important;
-  }
-  .project-title {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  img {
-    display: none;
-  }
-  .project-description {
-    font-size: 14px !important;
   }
   .nav-link:hover:after {
     width: 20%;
-  }
-}
-@media (min-width: 1440px) {
-  img {
-    max-width: 80% !important;
-  }
-  .project-description,
-  .project-title {
-    margin-top: 150px;
   }
 }

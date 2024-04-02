@@ -55,7 +55,7 @@ body {
   box-shadow: none !important;
 }
 .navbar-toggler:hover {
-  background: #fd4799 !important;
+  background:var(--primary-background-color) !important;
 }
 .nav-link {
   font-family: var(--primary-text-font);
@@ -81,13 +81,17 @@ body {
   transition: 0.3s;
 }
 button {
-  background: var(--primary-background-color);
+  background: rgb(248, 203, 238);
   color: white;
   font-family: var(--primary-text-font) !important;
   padding: 10px;
   border: solid var(--primary-background-color);
   border-radius: 10px !important;
   margin-left: 40px !important;
+  transition: all 200ms ease-in-out !important;
+}
+button:hover{
+  background:var(--primary-background-color);
 }
 h2 {
   background: var(--primary-background-color) !important;
