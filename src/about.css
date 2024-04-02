@@ -37,9 +37,10 @@ body {
   box-shadow: none !important;
 }
 .navbar-toggler:hover {
-  background: #fd4799 !important;
+  background: var(--primary-background-color) !important;
 }
 .nav-link {
+  color: black !important;
   font-family: var(--primary-text-font);
   text-decoration: none;
   position: relative;
@@ -64,7 +65,7 @@ body {
 }
 
 button {
-  background: grey;
+  background: rgb(248, 203, 238);
   color: white;
   font-family: var(--primary-text-font) !important;
   padding: 10px;
@@ -91,11 +92,16 @@ button:hover {
   font-family: var(--subtittle-text);
   font-weight: bold;
 }
-.text-page{
+.text-page {
   text-align: center;
 }
 img {
   max-width: 200px;
+}
+a {
+  text-decoration: none !important;
+  background: transparent;
+  color: white !important;
 }
 /*footer*/
 footer p {
@@ -110,7 +116,7 @@ footer p {
 footer a {
   background-color: transparent;
   text-decoration: none;
-  color: #ff0090;
+  color: #ff0090 !important;
 }
 
 /*responsive*/

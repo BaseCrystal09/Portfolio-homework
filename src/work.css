@@ -14,6 +14,7 @@
 body {
   background-color: rgb(248, 227, 248) !important;
 }
+/* Navbar */
 .navbar {
   top: 0;
   background-color: rgb(248, 227, 248);
@@ -23,25 +24,6 @@ body {
 .navbar-brand {
   color: #fd4799 !important;
   font-family: var(--tittle-text);
-}
-.hero {
-  margin: 90px 0px !important;
-}
-.hero p {
-  font-family: var(--primary-text-font);
-  font-size: 20px;
-}
-.hero h1 {
-  font-family: var(--tittle-text);
-  font-weight: 700;
-  font-size: 86px;
-  color: #fd4799;
-}
-.hero h3 {
-  font-family: var(--subtittle-text);
-}
-.hero-header button {
-  margin: 20px 0 !important;
 }
 .navbar-toggler-icon {
   background-color: transparent;
@@ -81,6 +63,7 @@ body {
   bottom: 10px;
   transition: 0.3s;
 }
+
 button {
   background: rgb(248, 203, 238);
   color: white;
@@ -88,38 +71,40 @@ button {
   padding: 10px;
   border: solid var(--primary-background-color);
   border-radius: 10px !important;
-  margin-left: 40px !important;
-  transition: all 200ms ease-in-out !important;
+  transition: 0.3s;
 }
 button:hover {
   background: var(--primary-background-color);
 }
-h2 {
-  background: var(--primary-background-color) !important;
-  color: white !important;
-  font-family: var(--tittle-text);
-  font-weight: bold !important;
-}
-.project-title {
+/*Main page*/
+.first-container h2 {
+  font-family: var(--tittle-text) !important;
+  font-weight: bold;
+  text-align: center;
+  margin: 90px 20px !important;
+  font-size: 58px;
   color: #fd4799;
-  font-family: var(--subtittle-text) !important;
-  font-weight: bolder !important;
-  font-size: 36px;
-}
-.project-description {
-  text-align: justify;
-  line-height: 35px;
-  padding: 0 40px !important;
-  font-family: var(--primary-text-font);
 }
 .project {
-  max-width: 80% !important;
+  text-align: center;
 }
-a {
-  text-decoration: none !important;
-  background-color: transparent;
-  color: white !important;
+img {
+  max-width: 90%;
+  margin: 20px;
 }
+.project h3 {
+  font-family: var(--subtittle-text);
+  font-weight: bolder !important;
+  font-size: 24px !important;
+  color: #fd4799;
+}
+.project p {
+  font-family: var(--primary-text-font);
+}
+.picture {
+  max-width: 100% !important;
+}
+/*footer*/
 footer p {
   background: var(--primary-background-color) !important;
   padding: 10px;
@@ -131,42 +116,20 @@ footer p {
 }
 footer a {
   background-color: transparent;
-  color: #ff0090 !important;
+  text-decoration: none;
+  color: #ff0090;
 }
+
+/*responsive*/
 @media (max-width: 748px) {
-  .hero {
-    margin-top: inherit !important;
-    text-align: center;
-    position: relative;
-    top: 50px;
-  }
-  .hero h1 {
-    font-size: 48px;
+  .about-hero h1 {
+    font-size: 48px !important;
     text-align: center;
   }
-  .hero h3 {
+  h3 {
     font-size: 18px !important;
-  }
-  .project-title {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  img {
-    display: none;
-  }
-  .project-description {
-    font-size: 14px !important;
   }
   .nav-link:hover:after {
     width: 20%;
-  }
-}
-@media (min-width: 1440px) {
-  img {
-    max-width: 80% !important;
-  }
-  .project-description,
-  .project-title {
-    margin-top: 150px;
   }
 }
