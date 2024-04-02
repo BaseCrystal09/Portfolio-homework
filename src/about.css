@@ -14,6 +14,7 @@
 body {
   background-color: rgb(248, 227, 248) !important;
 }
+/* Navbar */
 .navbar {
   top: 0;
   background-color: rgb(248, 227, 248);
@@ -23,25 +24,6 @@ body {
 .navbar-brand {
   color: #fd4799 !important;
   font-family: var(--tittle-text);
-}
-.hero {
-  margin: 90px 0px !important;
-}
-.hero p {
-  font-family: var(--primary-text-font);
-  font-size: 20px;
-}
-.hero h1 {
-  font-family: var(--tittle-text);
-  font-weight: 700;
-  font-size: 86px;
-  color: #fd4799;
-}
-.hero h3 {
-  font-family: var(--subtittle-text);
-}
-.hero-header button {
-  margin: 20px 0 !important;
 }
 .navbar-toggler-icon {
   background-color: transparent;
@@ -80,6 +62,7 @@ body {
   bottom: 10px;
   transition: 0.3s;
 }
+
 button {
   background: var(--primary-background-color);
   color: white;
@@ -94,21 +77,6 @@ h2 {
   color: white !important;
   font-family: var(--tittle-text);
   font-weight: bold !important;
-}
-.project-title {
-  color: #fd4799;
-  font-family: var(--subtittle-text) !important;
-  font-weight: bolder !important;
-  font-size: 36px;
-}
-.project-description {
-  text-align: justify;
-  line-height: 35px;
-  padding: 0 40px !important;
-  font-family: var(--primary-text-font);
-}
-.project {
-  max-width: 80% !important;
 }
 footer p {
   background: var(--primary-background-color) !important;
