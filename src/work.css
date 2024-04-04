@@ -8,7 +8,8 @@
   --subtittle-text: "Meera Inimai", sans-serif;
   --primary-text-font: "Duru Sans", sans-serif;
 }
-*, body{
+*,
+body {
   background-color: rgb(248, 227, 248);
 }
 
@@ -103,26 +104,55 @@ img {
   max-width: 100% !important;
 }
 /*footer*/
-footer p {
-  background: var(--primary-background-color) !important;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  margin-top: 40px;
+.contact-box {
+  padding: 30px 450px;
+}
+.contact-box h3 {
+  font-family: var(--tittle-text) !important;
+  font-weight: bolder !important;
+  font-size: 28px !important;
+  color: #fd4799;
+}
+.contact-box p {
   font-family: var(--primary-text-font);
-  font-size: 12px;
+  opacity: 50%;
 }
-footer a {
-  background-color: transparent;
+footer {
+  background: var(--primary-background-color);
+  font-size: 22px;
+  font-family: var(--primary-text-font);
+  text-align: center;
+  padding: 20px 0;
+}
+footer .social-links {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+}
+footer .social-links a {
   text-decoration: none;
-  color: #ff0090;
+  background-color: transparent !important;
+  color: white;
 }
-
+footer .social-links i {
+  background-color: transparent;
+  font-size: 48px;
+  padding: 10px;
+}
+ a {
+  background-color: transparent !important;
+  text-decoration: none !important;
+  color: white !important;
+  padding: 5px;
+}
 /*responsive*/
-@media (max-width: 748px) {
+@media (max-width: 1040px) {
   .about-hero h1 {
     font-size: 48px !important;
     text-align: center;
+  }
+  .contact-box {
+    padding: 30px 160px;
   }
   h3 {
     font-size: 18px !important;

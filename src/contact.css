@@ -13,8 +13,8 @@ body {
   background-color: rgb(248, 227, 248) !important;
   text-align: center;
 }
-body{
-    margin:150px 0 !important
+body {
+  margin: 150px 0 !important;
 }
 /* Navbar */
 .navbar {
@@ -28,7 +28,7 @@ body{
   font-family: var(--tittle-text);
 }
 .navbar-toggler-icon {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .navbar-toggler {
   transition: all 200ms ease-in-out;
@@ -67,7 +67,7 @@ body{
 }
 
 button {
-  background: rgb(248, 203, 238);
+  background: rgb(248, 203, 238) !important;
   color: white;
   font-family: var(--primary-text-font) !important;
   padding: 10px;
@@ -76,7 +76,7 @@ button {
   transition: 0.3s;
 }
 button:hover {
-  background: var(--primary-background-color);
+  background: var(--primary-background-color) !important;
 }
 /*Main page*/
 h2 {
@@ -94,34 +94,67 @@ p {
 .contacts {
   margin: 100px !important;
 }
-.link{
-    font-size: 24px;
-    text-decoration: none;
-    color: grey;
+.link {
+  font-size: 24px;
+  text-decoration: none;
+  color: grey;
 }
-.link:hover{
-    color: #fd4799;
+.link:hover {
+  color: #fd4799;
 }
 /*footer*/
-footer p {
-  background: var(--primary-background-color) !important;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  margin-top: 40px;
-  font-family: var(--primary-text-font);
-  font-size: 12px;
+.contact-box {
+  padding: 30px 450px;
 }
-footer a {
-  background-color: transparent !important;
+.contact-box h3 {
+  font-family: var(--tittle-text) !important;
+  font-weight: bolder !important;
+  font-size: 28px !important;
+  color: #fd4799;
+}
+.contact-box h4 {
+  font-family: var(--primary-text-font) !important;
+  opacity: 50% !important;
+  font-size: 16px;
+}
+footer {
+  background: var(--primary-background-color) !important;
+  font-size: 22px;
+  font-family: var(--primary-text-font);
+  text-align: center;
+  padding: 20px 0;
+}
+footer .social-links {
+  background-color: var(--primary-background-color) !important;
+  display: flex;
+  justify-content: center;
+}
+footer .social-links a {
   text-decoration: none;
-  color: #ff0090 !important;
-  font-size: 12px;
+  background-color: transparent !important;
+  color: white;
+}
+footer .social-links i {
+  background-color: transparent !important;
+  font-size: 48px;
+  padding: 10px;
+}
+a {
+  background-color: transparent !important;
+  text-decoration: none !important;
+  color: white !important;
+  padding: 5px;
 }
 
 /*responsive*/
 @media (max-width: 748px) {
   .nav-link:hover:after {
     width: 20%;
+  }
+  .contact-box {
+    padding: 30px 100px;
+  }
+  h3 {
+    font-size: 18px !important;
   }
 }

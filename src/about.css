@@ -104,19 +104,37 @@ a {
   color: white !important;
 }
 /*footer*/
-footer p {
-  background: var(--primary-background-color) !important;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  margin-top: 40px;
+footer {
+  background: var(--primary-background-color);
+  font-size: 22px;
   font-family: var(--primary-text-font);
-  font-size: 12px;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
 }
-footer a {
-  background-color: transparent;
+footer .social-links {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+}
+footer .social-links a {
   text-decoration: none;
-  color: #ff0090 !important;
+  background-color: transparent !important;
+  color: white;
+}
+footer .social-links i {
+  background-color: transparent;
+  font-size: 48px;
+  padding: 10px;
+}
+a {
+  background-color: transparent !important;
+  text-decoration: none !important;
+  color: white !important;
+  padding: 5px;
+}
+p {
+  font-size: 16px !important;
 }
 
 /*responsive*/

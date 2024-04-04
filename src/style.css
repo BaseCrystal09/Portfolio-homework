@@ -120,18 +120,47 @@ a {
   background-color: transparent;
   color: white !important;
 }
-footer p {
-  background: var(--primary-background-color) !important;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  margin-top: 40px;
-  font-family: var(--primary-text-font);
-  font-size: 12px;
+/*Footer*/
+.contact-box {
+  padding: 30px 450px;
 }
-footer a {
+.contact-box h3 {
+  font-family: var(--tittle-text) !important;
+  font-weight: bolder !important;
+  font-size: 28px !important;
+  color: #fd4799;
+}
+.contact-box p {
+  font-family: var(--primary-text-font);
+  opacity: 50%;
+}
+footer {
+  background: var(--primary-background-color);
+  font-size: 22px;
+  font-family: var(--primary-text-font);
+  text-align: center;
+  padding: 20px 0;
+}
+footer .social-links {
+  background-color: var(--primary-background-color);
+  display: flex;
+  justify-content: center;
+}
+footer .social-links a {
+  text-decoration: none;
+  background-color: transparent !important;
+  color: white;
+}
+footer .social-links i {
   background-color: transparent;
-  color: #ff0090 !important;
+  font-size: 48px;
+  padding: 10px;
+}
+a {
+  background-color: transparent !important;
+  text-decoration: none !important;
+  color: white !important;
+  padding: 5px;
 }
 @media (max-width: 748px) {
   .hero {
@@ -150,6 +179,9 @@ footer a {
   .project-title {
     font-size: 30px;
     margin-bottom: 20px;
+  }
+  .contact-box {
+    padding: 30px 160px;
   }
   img {
     display: none;
