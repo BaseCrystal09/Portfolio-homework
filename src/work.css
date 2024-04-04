@@ -117,12 +117,18 @@ img {
   font-family: var(--primary-text-font);
   opacity: 50%;
 }
+footer p {
+  font-size: 16px;
+  background-color: var(--primary-background-color);
+}
 footer {
   background: var(--primary-background-color);
   font-size: 22px;
-  font-family: var(--primary-text-font);
+  font-family: var(--primary-text-font) !important;
   text-align: center;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bolder !important;
 }
 footer .social-links {
   background-color: var(--primary-background-color);
@@ -139,7 +145,7 @@ footer .social-links i {
   font-size: 48px;
   padding: 10px;
 }
- a {
+a {
   background-color: transparent !important;
   text-decoration: none !important;
   color: white !important;
