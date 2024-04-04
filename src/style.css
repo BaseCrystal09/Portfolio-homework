@@ -200,6 +200,9 @@ footer p {
   .nav-link:hover:after {
     width: 20%;
   }
+   footer p {
+    font-size: 14px !important;
+  }
 }
 @media (min-width: 1440px) {
   img {
@@ -209,4 +212,5 @@ footer p {
   .project-title {
     margin-top: 150px;
   }
+ 
 }

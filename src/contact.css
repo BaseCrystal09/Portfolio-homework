@@ -163,4 +163,7 @@ footer p {
   h3 {
     font-size: 18px !important;
   }
+    footer p {
+    font-size: 14px !important;
+  }
 }

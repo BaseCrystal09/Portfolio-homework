@@ -152,4 +152,7 @@ footer p {
   .nav-link:hover:after {
     width: 20%;
   }
+  footer p {
+    font-size: 14px !important;
+  }
 }
